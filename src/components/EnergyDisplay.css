@@ -1,0 +1,92 @@
+.energy-display {
+  background: linear-gradient(135deg, #0a0e2a 0%, #1a1f3a 100%);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 2px solid #4facfe;
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.energy-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.energy-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.energy-bar span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.energy-container {
+  display: flex;
+  gap: 5px;
+}
+
+.energy-cell {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #4facfe;
+  background: rgba(79, 172, 254, 0.3);
+  transition: all 0.3s;
+}
+
+.energy-cell.filled {
+  background: #4facfe;
+  transform: scale(1.1);
+}
+
+.energy-cell.empty {
+  background: transparent;
+}
+
+.resources {
+  color: #ffd700;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.army-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.army-badge {
+  background: #4facfe;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  align-self: flex-start;
+}
+
+.army-bonus {
+  color: #ccc;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .energy-display {
+    padding: 15px;
+  }
+  
+  .energy-cell {
+    width: 25px;
+    height: 25px;
+  }
+}

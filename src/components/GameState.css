@@ -1,0 +1,99 @@
+.game-state {
+  background: linear-gradient(135deg, #1a1f3a 0%, #2a2f4a 100%);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 2px solid #f9d423;
+  box-shadow: 0 10px 30px rgba(249, 212, 35, 0.3);
+  text-align: center;
+}
+
+.turn-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.turn-number {
+  color: #4facfe;
+}
+
+.current-player {
+  color: #ffd700;
+}
+
+.phase-indicator {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.phase-indicator.setup {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+}
+
+.phase-indicator.energy {
+  background: linear-gradient(135deg, #4facfe 0%, #74b9ff 100%);
+}
+
+.phase-indicator.draw {
+  background: linear-gradient(135deg, #43e97b 0%, #75e083 100%);
+}
+
+.phase-indicator.action {
+  background: linear-gradient(135deg, #f9d423 0%, #ffeaa7 100%);
+}
+
+.phase-indicator.end {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.winner-announcement {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  animation: confetti 3s ease-out;
+}
+
+.winner-announcement h2 {
+  color: #1a1f3a;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.winner-announcement p {
+  color: #1a1f3a;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@keyframes confetti {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .turn-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .phase-indicator {
+    font-size: 1em;
+  }
+}

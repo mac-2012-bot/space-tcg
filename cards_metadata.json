@@ -1,0 +1,281 @@
+[
+  {
+    "id": 1,
+    "name": "Cruzeiro Estelar",
+    "army": "Vulcanis",
+    "type": "Transporte",
+    "cost": 2,
+    "attack": 1,
+    "defense": 2,
+    "health": 4,
+    "ability": "No início do teu turno, ganha +1 recurso. Pode transportar 1 carta de combate."
+  },
+  {
+    "id": 2,
+    "name": "Nave de Comando",
+    "army": "Vulcanis",
+    "type": "Comando",
+    "cost": 3,
+    "attack": 0,
+    "defense": 3,
+    "health": 5,
+    "ability": "Todas as tuas naves no tabuleiro ganham +1 de ataque enquanto esta carta estiver no tabuleiro."
+  },
+  {
+    "id": 3,
+    "name": "Caça Vulcânico",
+    "army": "Vulcanis",
+    "type": "Combate",
+    "cost": 4,
+    "attack": 4,
+    "defense": 1,
+    "health": 3,
+    "ability": "Pode atacar duas vezes por turno se não se mover."
+  },
+  {
+    "id": 4,
+    "name": "Sonda Exploradora",
+    "army": "Vulcanis",
+    "type": "Exploração",
+    "cost": 2,
+    "attack": 1,
+    "defense": 1,
+    "health": 3,
+    "ability": "No início do teu turno, compra uma carta extra. Pode ver as 3 primeiras cartas do deck do oponente."
+  },
+  {
+    "id": 5,
+    "name": "Estação de Reparos",
+    "army": "Vulcanis",
+    "type": "Construção",
+    "cost": 3,
+    "attack": 0,
+    "defense": 2,
+    "health": 6,
+    "ability": "No início do teu turno, cura 1 ponto de saúde a todas as tuas naves danificadas."
+  },
+  
+  {
+    "id": 6,
+    "name": "Geleira Flutuante",
+    "army": "Glacies",
+    "type": "Transporte",
+    "cost": 2,
+    "attack": 0,
+    "defense": 4,
+    "health": 5,
+    "ability": "No início do teu turno, ganha +1 de energia máxima (máximo +1 por turno)."
+  },
+  {
+    "id": 7,
+    "name": "Comando Glacial",
+    "army": "Glacies",
+    "type": "Comando",
+    "cost": 4,
+    "attack": 1,
+    "defense": 3,
+    "health": 4,
+    "ability": "Todas as tuas naves ganham +1 de defesa enquanto esta carta estiver no tabuleiro."
+  },
+  {
+    "id": 8,
+    "name": "Destruidor de Gelo",
+    "army": "Glacies",
+    "type": "Combate",
+    "cost": 5,
+    "attack": 5,
+    "defense": 2,
+    "health": 4,
+    "ability": "Ignora 2 pontos de defesa quando ataca."
+  },
+  {
+    "id": 9,
+    "name": "Patrulha Polar",
+    "army": "Glacies",
+    "type": "Exploração",
+    "cost": 2,
+    "attack": 2,
+    "defense": 1,
+    "health": 3,
+    "ability": "Pode mover-se para qualquer posição no tabuleiro sem custar energia extra."
+  },
+  {
+    "id": 10,
+    "name": "Base de Congelamento",
+    "army": "Glacies",
+    "type": "Construção",
+    "cost": 3,
+    "attack": 0,
+    "defense": 3,
+    "health": 5,
+    "ability": "Reduz o custo de energia da próxima carta jogada em 1 ponto."
+  },
+  
+  {
+    "id": 11,
+    "name": "Nave Florestal",
+    "army": "Silva",
+    "type": "Transporte",
+    "cost": 2,
+    "attack": 1,
+    "defense": 2,
+    "health": 5,
+    "ability": "No início do teu turno, ganha +1 de saúde máxima."
+  },
+  {
+    "id": 12,
+    "name": "Comando Verde",
+    "army": "Silva",
+    "type": "Comando",
+    "cost": 3,
+    "attack": 0,
+    "defense": 2,
+    "health": 6,
+    "ability": "Todas as tuas naves ganham regeneração de 1 ponto de saúde no final do turno."
+  },
+  {
+    "id": 13,
+    "name": "Caça das Sombras",
+    "army": "Silva",
+    "type": "Combate",
+    "cost": 4,
+    "attack": 3,
+    "defense": 3,
+    "health": 3,
+    "ability": "Se esta carta não for atacada este turno, ganha +2 de ataque no próximo ataque."
+  },
+  {
+    "id": 14,
+    "name": "Explorador da Floresta",
+    "army": "Silva",
+    "type": "Exploração",
+    "cost": 2,
+    "attack": 1,
+    "defense": 1,
+    "health": 4,
+    "ability": "Pode descartar uma carta da tua mão para revelar a carta do topo do deck do oponente."
+  },
+  {
+    "id": 15,
+    "name": "Arvore de Vida",
+    "army": "Silva",
+    "type": "Construção",
+    "cost": 3,
+    "attack": 0,
+    "defense": 1,
+    "health": 8,
+    "ability": "No início do teu turno, todas as tuas naves ganham +1 de saúde."
+  },
+  
+  {
+    "id": 16,
+    "name": "Nave Éter",
+    "army": "Aether",
+    "type": "Transporte",
+    "cost": 2,
+    "attack": 1,
+    "defense": 1,
+    "health": 3,
+    "ability": "No início do teu turno, recupera 1 ponto de energia."
+  },
+  {
+    "id": 17,
+    "name": "Comando Celestial",
+    "army": "Aether",
+    "type": "Comando",
+    "cost": 4,
+    "attack": 0,
+    "defense": 2,
+    "health": 5,
+    "ability": "No início do teu turno, todas as tuas naves ganham +1 de energia disponível para jogar."
+  },
+  {
+    "id": 18,
+    "name": "Caça Relâmpago",
+    "army": "Aether",
+    "type": "Combate",
+    "cost": 5,
+    "attack": 6,
+    "defense": 1,
+    "health": 2,
+    "ability": "Pode atacar imediatamente após ser jogado, sem esperar pelo turno seguinte."
+  },
+  {
+    "id": 19,
+    "name": "Sonda Estelar",
+    "army": "Aether",
+    "type": "Exploração",
+    "cost": 2,
+    "attack": 1,
+    "defense": 1,
+    "health": 3,
+    "ability": "Pode comprar cartas do deck do oponente até encontrar uma carta de combate."
+  },
+  {
+    "id": 20,
+    "name": "Portal de Energia",
+    "army": "Aether",
+    "type": "Construção",
+    "cost": 3,
+    "attack": 0,
+    "defense": 2,
+    "health": 4,
+    "ability": "No início do teu turno, todas as tuas naves ganham +1 de ataque."
+  },
+  
+  {
+    "id": 21,
+    "name": "Cargueiro Mecânico",
+    "army": "Mechanos",
+    "type": "Transporte",
+    "cost": 2,
+    "attack": 1,
+    "defense": 3,
+    "health": 4,
+    "ability": "No início do teu turno, ganha +2 recursos."
+  },
+  {
+    "id": 22,
+    "name": "Comando Robótico",
+    "army": "Mechanos",
+    "type": "Comando",
+    "cost": 4,
+    "attack": 2,
+    "defense": 4,
+    "health": 5,
+    "ability": "Pode reparar 2 pontos de saúde em qualquer nave tua no tabuleiro."
+  },
+  {
+    "id": 23,
+    "name": "Tanque de Batalha",
+    "army": "Mechanos",
+    "type": "Combate",
+    "cost": 6,
+    "attack": 5,
+    "defense": 5,
+    "health": 6,
+    "ability": "Não pode ser removido do tabuleiro a menos que seja destruído."
+  },
+  {
+    "id": 24,
+    "name": "Drone de Recolha",
+    "army": "Mechanos",
+    "type": "Exploração",
+    "cost": 2,
+    "attack": 0,
+    "defense": 2,
+    "health": 3,
+    "ability": "Pode comprar cartas do teu cemitério sem custar energia."
+  },
+  {
+    "id": 25,
+    "name": "Fábrica de Armas",
+    "army": "Mechanos",
+    "type": "Construção",
+    "cost": 3,
+    "attack": 0,
+    "defense": 3,
+    "health": 5,
+    "ability": "Reduz o custo de todas as cartas de combate em 1 ponto."
+  }
+]

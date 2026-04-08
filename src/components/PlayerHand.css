@@ -1,0 +1,156 @@
+.player-hand {
+  background: linear-gradient(135deg, #1a1f3a 0%, #2a2f4a 100%);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 2px solid #43e97b;
+  box-shadow: 0 10px 30px rgba(67, 233, 123, 0.3);
+}
+
+.player-hand h2 {
+  color: #43e97b;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.hand-grid {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.hand-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hand-grid::-webkit-scrollbar-thumb {
+  background: #43e97b;
+  border-radius: 4px;
+}
+
+.hand-card {
+  min-width: 160px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hand-card:hover {
+  transform: scale(1.05);
+}
+
+.hand-card.selected {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(67, 233, 123, 0.7);
+}
+
+.hand-card .card {
+  background: linear-gradient(135deg, #2a2f4a 0%, #3a3f5a 100%);
+  border-radius: 10px;
+  padding: 12px;
+  height: 100%;
+  border: 2px solid transparent;
+}
+
+.hand-card .card:hover {
+  border-color: #43e97b;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.card-name {
+  color: #4facfe;
+  font-size: 1.1em;
+}
+
+.card-army {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.7em;
+  color: white;
+  font-weight: bold;
+}
+
+.army-Vulcanis {
+  background: #ff6b6b;
+}
+
+.army-Glacier {
+  background: #43e97b;
+}
+
+.army-Silva {
+  background: #f9d423;
+}
+
+.army-Aether {
+  background: #4facfe;
+}
+
+.army-Mechanos {
+  background: #6c5ce7;
+}
+
+.card-type-badge {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+.card-stats {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.85em;
+}
+
+.card-stats span {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: white;
+}
+
+.card-cost {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.card-ability-preview {
+  font-size: 0.7em;
+  color: #ccc;
+  line-height: 1.4;
+  font-style: italic;
+  text-align: center;
+}
+
+.hand-instructions {
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9em;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hand-grid {
+    gap: 10px;
+  }
+  
+  .hand-card {
+    min-width: 140px;
+  }
+}
