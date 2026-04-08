@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE TCG - Jogo de Cartas Colecionáveis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e2a 0%, #1a1f3a 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 2px solid #4facfe;
+            box-shadow: 0 20px 60px rgba(79, 172, 254, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: #4facfe;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(79, 172, 254, 0.7);
+        }
+        
+        .subtitle {
+            color: #ccc;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        
+        .game-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .game-btn {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+        
+        .game-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(79, 172, 254, 0.6);
+        }
+        
+        .game-btn:active {
+            transform: translateY(0);
+        }
+        
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            border-left: 4px solid #43e97b;
+        }
+        
+        .instructions h2 {
+            color: #43e97b;
+            margin-bottom: 20px;
+        }
+        
+        .instructions ol {
+            text-align: left;
+            line-height: 2;
+            color: #ccc;
+        }
+        
+        .instructions li {
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #6c5ce7;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.4);
+        }
+        
+        .feature-card h3 {
+            color: #6c5ce7;
+            margin-bottom: 10px;
+        }
+        
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .repo-link {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .repo-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .game-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 SPACE TCG</h1>
+        <p class="subtitle">Jogo de Cartas Colecionáveis com Naves Espaciais</p>
+        
+        <div class="game-buttons">
+            <button class="game-btn" onclick="window.open('https://github.com/mac-2012-bot/space-tcg', '_blank')">
+                📂 Ver Código no GitHub
+            </button>
+            <button class="game-btn" onclick="window.open('https://mac-2012-bot.github.io/space-tcg/dist/', '_blank')">
+                🎮 Jogar Agora
+            </button>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🌌</div>
+                <h3>5 Exércitos Únicos</h3>
+                <p>Vulcanis, Glacies, Silva, Aether e Mechanos com bónus passivos</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚔️</div>
+                <h3>5 Tipos de Naves</h3>
+                <p>Transporte, Comando, Combate, Exploração e Construção</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Combate por Turnos</h3>
+                <p>Estratégia, gestão de recursos e ataques inteligentes</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3>React + Vite</h3>
+                <p>Tecnologias modernas e código aberto</p>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2>📖 Como Jogar</h2>
+            <ol>
+                <li><strong>Escolhe um exército:</strong> Vulcanis (🔥), Glacies (❄️), Silva (🌳), Aether (💫) ou Mechanos (⚙️)</li>
+                <li><strong>Recebe 5 cartas:</strong> Cada carta tem um tipo e habilidade única</li>
+                <li><strong>Joga cartas no tabuleiro:</strong> Usa energia (⚡) para jogar cartas</li>
+                <li><strong>Ataca o oponente:</strong> Combate por turnos com estratégia</li>
+                <li><strong>Ganha recursos:</strong> Transportes geram recursos (💰) para comprar mais cartas</li>
+                <li><strong>Estratégia é chave:</strong> Usa comandos para buffar outras naves, constrói defesas e ataca com combate</li>
+            </ol>
+        </div>
+        
+        <p style="margin-top: 30px; color: #ccc;">
+            <strong>Desenvolvido com ❤️ por MacBot</strong> 🤖
+        </p>
+        
+        <p style="margin-top: 20px;">
+            <a href="https://github.com/mac-2012-bot/space-tcg" class="repo-link" target="_blank">
+                📂 Ver Repositório no GitHub
+            </a>
+        </p>
+    </div>
+    
+    <script>
+        // Redirecionar automaticamente para a app se não funcionar
+        setTimeout(() => {
+            window.location.href = 'https://mac-2012-bot.github.io/space-tcg/dist/';
+        }, 5000);
+    </script>
+</body>
+</html>
